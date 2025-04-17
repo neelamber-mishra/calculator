@@ -25,7 +25,10 @@ void MainWindow::on_add_clicked()
 
 void MainWindow::on_sub_clicked()
 {
-     ui->result->setText(QString::number(0));
+     a = ui->a->text().toInt();
+    b = ui->b->text().toInt();
+    s = a-b;
+    ui->result->setText(QString::number(s));
 }
 
 
