@@ -45,7 +45,8 @@ void MainWindow::on_div_clicked()
 {
     a = ui->a->text().toInt();
     b = ui->b->text().toInt();
-    s = a/b;
+    if(b !=0)s = a/b;
+    else s = 0;
     ui->result->setText(QString::number(s));
 }
 
